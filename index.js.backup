@@ -1,0 +1,39 @@
+//function 1: calculateTax
+function calculateTax(amount) {
+    return amount * 0.10; //10% tax
+}
+
+//function 2: convertToUpperCase
+function convertToUpperCase(text) {
+    return text.toUpperCase();
+}
+
+//function 3: findMaximum
+function findMaximum(num1, num2) {
+    if (num1 > num2) {
+        return num1;
+    } else {
+        return num2;
+    }
+}
+
+//function 4: isPalindrome
+function isPalindrome(word) {
+    //Reverse the string and compare
+    function isPalindrome(word) {
+  let reverse = "";
+  for (let i = word.length - 1; i >= 0; i--) {
+    reverse += word[i];
+  }
+  return word === reverse;
+}
+
+//function 5: calculateDiscountedPrice
+function calculateDiscountedPrice(originalPrice, discountPercentage) {
+  let discount = originalPrice * (discountPercentage / 100);
+  return originalPrice - discount;
+}
+
+
+// This is required for the test to function properly  
+module.exports = { calculateTax, convertToUpperCase, findMaximum, isPalindrome, calculateDiscountedPrice };
